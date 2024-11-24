@@ -30,6 +30,7 @@
         --fs-800: 5rem;
         --fs-700: 2.5rem;
         --fs-600: 1.5rem;
+        --fs-500: 1.25rem
         --fs-400: 1rem;
     }
 }
@@ -40,6 +41,16 @@
         --fs-800: 6.25rem;
         --fs-700: 3.5rem;
         --fs-600: 2rem;
+        --fs-500: 1.75rem;
+        --fs-400: 1.125rem;
+    }
+}
+@media (max-width: 48em) {
+    :root {
+        --fs-800: 6.25rem;
+        --fs-700: 3.5rem;
+        --fs-600: 2rem;
+        --fs-500: 1.25rem;
         --fs-400: 1.125rem;
     }
 }
@@ -422,6 +433,11 @@ select {
         aspect-ratio: 1; */
     }
 
+    :root {
+        --fs-400: .9rem;
+    }
+    
+
 }
 
 @media (min-width: 35em) {
@@ -430,7 +446,7 @@ select {
     }
 }
 
-@media (min-width:35em) and (max-width:48em) {
+@media (min-width:35em) and (max-width:50em) {
         /* .primary-navigation { 
             padding-inline:  2rem 1rem;
         } */
@@ -606,13 +622,10 @@ body {
 }
 
 .img-moon {
-    background-image: url(./assets/destination/image-moon.png);
-    background-size: contain;
+    background-image: url(./assets/destination/image-moon.webp);
+    background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    /* width: 100%;
-    height: 100%; */
     width: 30rem;
     height: 30rem;
-
 }
