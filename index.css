@@ -184,6 +184,13 @@ select {
     max-width: 50ch;
 }
 
+
+@media (max-width:52em) {
+    .primary-navigation {
+        margin: 0;
+    }
+}
+
 @media (min-width: 50em) {
     .grid-container {
         text-align: left;
@@ -488,6 +495,8 @@ select {
 
 
 
+
+
 .primary-navigation > ul {
     display: flex;
     justify-content: space-around;
@@ -594,7 +603,7 @@ body {
 
 .destination {
     background-image: url(./assets/destination/background-destination-desktop.jpg);
-    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 @media (min-width: 35rem) {
@@ -602,6 +611,12 @@ body {
         background-position: center center;
         background-image: url(./assets/home/background-home-tablet.jpg);
         background-repeat: no-repeat;
+    }
+
+    .destination {
+        background-image: url(./assets/destination/background-destination-desktop.jpg);
+        background-size: cover;
+        background-position: center center;
     }
 }
 
@@ -611,21 +626,30 @@ body {
         background-image: url(./assets/home/background-home-desktop.jpg);
         background-repeat: no-repeat;
     }
+
+    .destination {
+        background-image: url(./assets/destination/background-destination-desktop.jpg);
+        background-size: contain;
+        background-position: center center;
+    }
 }     
 
 /* ----------------------------- */
 /* destination page                      */
 /* ----------------------------- */
 .moon {
-    width: 100%;
-    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.img-moon {
+
+/* .img-moon {
     background-image: url(./assets/destination/image-moon.webp);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    width: 30rem;
-    height: 30rem;
-}
+    width: 150px;
+    height: 150px;
+} */
+
