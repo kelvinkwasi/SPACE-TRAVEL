@@ -643,16 +643,25 @@ body {
         'title'
         'image'
         'tabs'
-        'content'
+        'content';
 }
 
-.moon {
+.numbered-title {
+    grid-area: title;
+}
+
+.grid-container--destination > img {
+    grid-area: image;
+    max-width: 60%;
+}
+
+/* .moon {
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 
-@media (min-width: 50em) {
+@media (min-width: 45em) {
     .grid-container {
         text-align: left;
         column-gap: var(--container-gap, 2rem);
